@@ -8,5 +8,6 @@ Url: https://react-cinema-joel.netlify.app/
 
 || Tech Stack ||
 
+[![My Skills](https://skillicons.dev/icons?i=react,ts,vite,css)](https://skillicons.dev)
 
 
