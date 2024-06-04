@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+}
+
+/* Header.tsx */
+
+.backgroundImage {
+    background-image: url('https://occ-0-38-1501.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbXoaFuuloUutO6ixdSL12yM_DC9fw8e99Uh4Ta2KSJO3Kr2kg4RYPXwtjZhp929md_Q_wU75C8_7NzgdWAIXyVPDkISXBY0d3KN.webp?r=02b');
+    /* max-height: 80% !important; */
+    /* padding-bottom: 5em; */
+    margin-bottom: 0em;
+    background-size: cover;
+    width: 100vw;
+}
+
+.billboardTitle {
+    width: 30em;
+    margin-left: 3em;
+}
+
+.billBoardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.3em;
+}
+
+.billBoardParagraphOne {
+    color: #ffffff;
+    margin-left: 5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+}
+
+.billBoardDescription {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: .1vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+    max-width: 27rem;
+    margin-left: 4em;
+}
+
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.4em;
+    gap: 0.4em;
+    margin-bottom: 5em;
+}
+
+.playButton {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.playButton:hover {
+  background-color: #c4c4c4;
+}
+.playButton:focus,
+.playButton:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.moreInfoButton {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #5c5c5c;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.moreInfoButton:hover {
+    background-color: #141414;
+    color: #fff;
+}
+.moreInfoButton:focus,
+.moreInfoButton:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.logo {
+    width: 13em;
+    display: block; /* Ensures no extra space below image */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+li:hover {
+    font-weight: 800;
+    transition: 0.5s;
+    /* font-size: 1.05em; */
+    color: #77D8F9;
+}
+
+li:active {
+    color: #77d8f979;
+}
+
+/* //Movies.tsx */
+
+.popularTitle {
+    color: #ffffff;
+    margin-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 3em;
+    font-size: 20px;
+}
+
+.movieContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  gap: 0.2em;
+  list-style-type: none;
+  margin-left: 3em;
+}
+
+.individualMovieImage {
+    max-width: 10em;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.individualMovieImage:hover {
+    transition: 0.3s;
+    max-width: 10em;
+    opacity: 80%;
+}
+
+.individualMovieImage:active {
+    opacity: 50%;
+}
+
+@media (max-width: 344px) {
+    .movieContainer {
+        max-width: calc(2 * (50% - 0.2em)); /* Ensure two items per row with gap */
+    }
+
+    .individualMovieImage {
+        flex-basis: calc(50% - 0.2em); /* Set the width of each movie item */
+        max-width: calc(50% - 0.2em); /* Set the maximum width */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .backgroundImage {
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navbarContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Center vertically */
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: 1em;
+    }
+
+    .logo {
+        width: 15em;
+        margin-top: -56px; /* Remove top margin */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+.listContainer {
+    display: none;
+}
+.billboardTitle {
+    max-width: 50%;
+}
+.menuLinks {
+    display: none;
+}
+/* .movieContainer {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+} */
+}
