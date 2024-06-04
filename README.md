@@ -1,4 +1,4 @@
-# React [![My Skills](https://skillicons.dev/icons?i=react)](https://skillicons.dev) Cinema App
+#  [![My Skills](https://skillicons.dev/icons?i=react)](https://skillicons.dev)  React Cinema App
 
 ![Screenshots](https://github.com/JPereyra7/React-MovieApp/blob/main/src/assets/scrn.png?raw=true)
 
