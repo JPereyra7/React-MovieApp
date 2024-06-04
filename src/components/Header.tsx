@@ -11,7 +11,7 @@ const Header = () => {
     <>
     <div className="backgroundImage">
      <div className="navbarContainer">
-        <img className="logo" src="/src/assets/React Cinema.svg" alt="" />
+        <img className="logo" src="/src/assets/logocinema.svg" alt="" />
         <ul className="listContainer">
             <li className='menuLinks'>Hem</li>
             <li className='menuLinks'>Serier</li>
