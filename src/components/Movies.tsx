@@ -4,7 +4,7 @@ import { IMovies } from "../services/Movies";
 
 const Movies = () => {
   const [movies, setMovies] = useState<IMovies[]>([]);
-  const baseURL = 'http://medieinstitutet-wie-products.azurewebsites.net/api/products'
+  const baseURL = 'https://medieinstitutet-wie-products.azurewebsites.net/api/products'
 
   useEffect(() => {
     const getData = async () => {
