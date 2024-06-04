@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import logocinema from '../assets/logocinema.svg'
 
 library.add(faPlay, faCircleInfo);
 
@@ -11,7 +12,7 @@ const Header = () => {
     <>
     <div className="backgroundImage">
      <div className="navbarContainer">
-        <img className="logo" src="/src/assets/logocinema.svg" alt="" />
+        <img className="logo" src={logocinema} alt="" />
         <ul className="listContainer">
             <li className='menuLinks'>Hem</li>
             <li className='menuLinks'>Serier</li>
