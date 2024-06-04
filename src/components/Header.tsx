@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import logocinema from '../assets/logocinema.svg'
+import billboardtitle from '../assets/billboardtitle.webp'
 
 library.add(faPlay, faCircleInfo);
 
@@ -23,7 +24,7 @@ const Header = () => {
         </ul>
      </div>
      <div className="billBoardContainer">
-        <img className="billboardTitle" src="/src/assets/billboardtitle.webp" alt="" />
+        <img className="billboardTitle" src={billboardtitle} alt="" />
         <p className="billBoardParagraphOne">#10 bland filmer idag</p>
         <p className="billBoardDescription">Flocken får det hett om öronen när Scrat hamnar i rymden och råkar utlösa en kosmisk händelse som försätter hela jorden i fara.</p>
 
