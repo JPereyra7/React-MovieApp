@@ -163,7 +163,8 @@ li:active {
 .individualMovieImage {
   max-width: 10em;
   object-fit: cover;
-  cursor: pointer;
+  cursor: pointer; 
+  
 }
 
 .individualMovieImage:hover {
